@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ボタン</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>ボタンのアクセシビリティを考える</h1>
+    <p>見た目は同じでもコードが違います。</p>
+
+    <h2>a要素</h2>
+    <p>
+      <a href="https://www.google.co.jp/" class="button">画面遷移</a>
+    </p>
+    
+    <p>
+      <a href="#" class="button js-button">操作ボタン</a>
+    </p>
+
+    <h2>button要素</h2>
+    <p>
+      <button type="button" class="button js-link">画面遷移</button>
+    </p>
+    
+    <p>
+      <button type="button" class="button js-button">操作ボタン</button>
+    </p>
+
+    <h2>div要素</h2>
+    <div class="stack">
+      <div class="button">ボタン</div>
+      <div class="button js-link">画面遷移</div>
+      <div class="button js-button">操作ボタン</div>
+      <!-- <div role="button" tabindex="0" class="button">ボタン</div> -->
+    </div>
+  </body>
+</html>
